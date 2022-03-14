@@ -1,0 +1,699 @@
+place GLOBAL_START init 1;
+place GLOBAL_END;
+place p160;
+place p164;
+place p163;
+place p162;
+place p161;
+place p155;
+place p154;
+place p158;
+place p153;
+place p152;
+place p151;
+place p150;
+place p146;
+place p145;
+place p149;
+place p148;
+place p147;
+place p182;
+place p181;
+place p180;
+place p186;
+place p185;
+place p184;
+place p183;
+place p179;
+place p178;
+place p176;
+place p171;
+place p170;
+place p175;
+place p174;
+place p173;
+place p172;
+place p167;
+place p166;
+place p165;
+place p169;
+place p10;
+place p11;
+place p198;
+place p193;
+place p192;
+place p191;
+place p197;
+place p196;
+place p195;
+place p194;
+place p189;
+place p74;
+place p73;
+place p78;
+place p212;
+place p211;
+place p210;
+place p214;
+place p213;
+place p219;
+place p218;
+place p217;
+place p81;
+place p80;
+place p83;
+place p82;
+place p85;
+place p84;
+place p87;
+place p86;
+place p201;
+place p89;
+place p200;
+place p88;
+place p204;
+place p203;
+place p202;
+place p209;
+place p208;
+place p207;
+place p206;
+place p90;
+place p92;
+place p94;
+place p93;
+place p96;
+place p98;
+place p112;
+place p111;
+place p117;
+place p116;
+place p114;
+place p119;
+place p118;
+place p223;
+place p101;
+place p222;
+place p221;
+place p220;
+place p106;
+place p105;
+place p103;
+place p109;
+place p108;
+place p107;
+place p2;
+place p3;
+place p4;
+place p5;
+place p6;
+place p8;
+place p141;
+place p140;
+place p139;
+place p138;
+place p137;
+place p131;
+place p130;
+place p124;
+place p123;
+place p122;
+place p121;
+place p128;
+place p127;
+place p126;
+place p125;
+place p12;
+place p13;
+place p15;
+place p16;
+place p18;
+place p19;
+place p20;
+place p7;
+place p9;
+place p14;
+place p17;
+place p23;
+place p24;
+place p25;
+place p26;
+place p28;
+place p300;
+place p301;
+place p31;
+place p30;
+place p37;
+place p38;
+place p39;
+place p40;
+place p41;
+place p42;
+
+trans ricevi_scelta_corso_ref
+  in  p74, p202
+  out p89;
+
+trans controlla_pagamento_prima_rata_ref
+  in  p16
+  out p81;
+
+trans invia_proposta_calendario_ref
+  in  p2
+  out p78, p203;
+
+trans t1
+  in  GLOBAL_START
+  out p201, p90;
+
+trans municazione_prossima_lezione_normale_ref
+  in  p18
+  out p20, p5;
+
+trans comunicazione_prossima_ultima_lezione_ref
+  in  p19
+  out p4, p6;
+
+trans inizio_lezione_ref
+  in  p108
+  out p3;
+
+trans inizio_ultima_lezione_ref
+  in  p4
+  out p139;
+
+trans ricevi_comunicazione_lezione_normale_stu
+  in  p160, p5
+  out p166;
+
+trans ricevi_comunicazione_ultima_lezione_stu
+  in  p160, p6
+  out p8;
+
+trans inizio_ultima_lezione_stu
+  in  p8
+  out p162;
+
+trans invia_nuova_proposta_ref
+  in  p83
+  out p85, p204;
+
+trans ricevi_accettazione_proposta_ref
+  in  p82, p206
+  out p80;
+
+trans ricevi_proposta_modifiche_ref
+  in  p82, p207
+  out p84;
+
+trans accetta_proposta_ref
+  in  p86
+  out p88, p208;
+
+trans ricevi_richiesta_ref
+  in  p73, p145
+  out p30;
+
+trans start_ref
+  in  p90
+  out p73;
+
+trans invia_lista_corsi_ref
+  in  p87
+  out p74, p146;
+
+trans scegli_referente_ref
+  in  p89
+  out p15;
+
+trans fine_corso_ref
+  in  p95
+  out p98;
+
+trans registra_giudizio_ref
+  in  p21
+  out p22;
+
+trans invia_attestato_ref
+  in  p103
+  out p37, p223;
+
+trans end_ref
+  in  p106
+  out p105;
+
+trans controlla_pagamento_seconda_rata_ref
+  in  p22
+  out p103;
+
+trans calendario_fissato_ref
+  in  p107
+  out p109;
+
+trans ricevi_messaggio_ref
+  in  p116, p218
+  out p101;
+
+trans esponi_concetti_ref
+  in  p3
+  out p112;
+
+trans richiedi_se_necessita_chiarimenti_ref
+  in  p112
+  out p114, p209;
+
+trans ricevi_domanda_chiarimento_ref
+  in  p117, p210
+  out p119;
+
+trans ricevi_comunicazione_nessun_chiarimento_ref
+  in  p117, p211
+  out p118;
+
+trans rispondi_chiarimento_ref
+  in  p119
+  out p121, p212;
+
+trans invio_messaggio_ref
+  in  p101
+  out p111, p219;
+
+trans invia_quesito_ref
+  in  p141
+  out p92, p220;
+
+trans ricevi_soluzione_quesito_ref
+  in  p92, p221
+  out p94;
+
+trans comunica_fine_test_ref
+  in  p96
+  out p95, p222;
+
+trans carica_materiali_ref
+  in  p17
+  out p24;
+
+trans ricevi_lista_corsi_stu
+  in  p300, p146
+  out p125;
+
+trans fine_lezione_ref
+  in  p138
+  out p137;
+
+trans paga_prima_rata_stu
+  in  p12
+  out p7;
+
+trans invia_scelta_corso_stu
+  in  p126
+  out p127, p202;
+
+trans contatta_segreteria_stu
+  in  p123
+  out p124, p145;
+
+trans start_stu
+  in p201
+  out p123;
+
+trans ricevi_comunicazione_domnde_finite_ref
+  in  p116, p11
+  out p28;
+
+trans invia_correzioni_ref
+  in  p130
+  out p138, p217;
+
+trans scegli_corso_stu
+  in  p125
+  out p126;
+
+trans proponi_esercizio_ref
+  in  p118
+  out p122, p213;
+
+trans ricevi_soluzione_ref
+  in  p122, p214
+  out p130;
+
+trans ricevi_quesito_stu
+  in  p161, p220
+  out p164;
+
+trans proponi_variazioni_stu
+  in  p155
+  out p147, p207;
+
+trans ricevi_messaggio_stu
+  in  p197, p219
+  out p200;
+
+trans ricevi_accettazione_stu
+  in  p147,p208
+  out p149;
+
+trans ricevi_proposta_calendario_stu
+  in  p128, p203
+  out p150;
+
+trans ricevi_nuova_proposta_stu
+  in  p147, p204
+  out p153;
+
+trans accetta_proposta_stu
+  in  p148
+  out p206, p152;
+
+trans calendario_fissato_stu
+  in  p151
+  out p167;
+
+trans t129
+  in  p105, p174
+  out GLOBAL_END;
+
+trans comunica_esito_alla_segreteria_ref
+  in  p98
+  out p21;
+
+trans fai_domanda_chiarimento_stu
+  in  p181
+  out p180, p210;
+
+trans invia_soluzione_stu
+  in  p186
+  out p185, p214;
+
+trans ricevi_esercizio_stu
+  in  p182, p213
+  out p184;
+
+trans comunica_nessun_chiarimento_stu
+  in  p178
+  out p182, p211;
+
+trans ricevi_richiesta_chiarimenti_stu
+  in  p209, p173
+  out p176;
+
+trans ricevi_risposta_chiarimento_stu
+  in  p180, p212
+  out p183;
+
+trans lezione_normale_stu
+  in  p166
+  out p175;
+
+trans ascolta_concetti_stu
+  in  p175
+  out p173;
+
+trans comunica_domande_finite_stu
+  in  p158
+  out p14, p11;
+
+trans fine_corso_stu
+  in  p170
+  out p169;
+
+trans paga_seconda_rata_stu
+  in  p169
+  out p172;
+
+trans ricevi_attestato_stu
+  in  p172, p223
+  out p301;
+
+trans end_stu
+  in  p171
+  out p174;
+
+trans invia_soluzione_quesito_stu
+  in  p163
+  out p165, p221;
+
+trans risolvi_quesito_stu
+  in  p164
+  out p163;
+
+trans ricevi_comunicazione_fine_test_stu
+  in  p161, p222
+  out p170;
+
+trans ricevi_correzioni_stu
+  in  p185, p217
+  out p189;
+
+trans t177
+  in  p196, p10
+  out p160;
+
+trans attendo_caricamento_materiale_stu
+  in  p193
+  out p194;
+
+trans invia_messaggio_stu
+  in  p198
+  out p197, p218;
+
+trans consulto_materiale_stu
+  in  p194
+  out p196;
+
+trans t173
+  in  p192
+  out p9, p193;
+
+trans fine_lezione_stu
+  in  p189
+  out p192;
+
+trans risolvi_esercizio_stu
+  in  p184
+  out p186;
+
+trans t12
+  in  p78
+  out p82;
+
+trans t13
+  in  p85
+  out p82;
+
+trans t14
+  in  p84
+  out p83;
+
+trans t15
+  in  p84
+  out p86;
+
+trans t16
+  in  p80
+  out p107;
+
+trans t17
+  in  p88
+  out p107;
+
+trans t18
+  in  p109
+  out p108;
+
+trans t19
+  in  p20
+  out p108;
+
+trans t22
+  in  p114
+  out p117;
+
+trans t23
+  in  p121
+  out p117;
+
+trans t26
+  in  p94
+  out p96;
+
+trans t27
+  in  p94
+  out p93;
+
+trans t28
+  in  p139
+  out p141;
+
+trans t29
+  in  p93
+  out p141;
+
+trans t32
+  in  p26
+  out p116;
+
+trans t33
+  in  p111
+  out p116;
+
+trans t36
+  in  p149
+  out p151;
+
+trans t37
+  in  p152
+  out p151;
+
+trans t38
+  in  p153
+  out p154;
+
+trans t39
+  in  p150
+  out p154;
+
+trans t40
+  in  p154
+  out p155;
+
+trans t41
+  in  p154
+  out p148;
+
+trans t42
+  in  p176
+  out p179;
+
+trans t43
+  in  p183
+  out p179;
+
+trans t44
+  in  p179
+  out p181;
+
+trans t45
+  in  p179
+  out p178;
+
+trans t48
+  in  p167
+  out p166;
+
+trans ft50
+  in  p162
+  out p161;
+
+trans t51
+  in  p165
+  out p161;
+
+trans t52
+  in  p195
+  out p198;
+
+trans t53
+  in  p195
+  out p158;
+
+trans t54
+  in  p200
+  out p195;
+
+trans t55
+  in  p191
+  out p195;
+
+trans ricevi_messaggio_dal_referente_stu
+  in  p13,p127
+  out p12;
+
+trans contatta_studente
+  in  p15
+  out p16,p13;
+
+trans t63
+  in  p131
+  out p18;
+
+trans t64
+  in  p131
+  out p19;
+
+trans calendario_da_fissare_ref
+  in  p81
+  out p2;
+
+trans calendario_da_fissare_stu
+  in  p7
+  out p128;
+
+trans inizio_chat_stu
+  in  p9
+  out p191;
+
+trans fine_chat_stu
+  in  p14
+  out p10;
+
+trans t30
+  in  p137
+  out p17, p23;
+
+trans carica_esercizi_ref
+  in  p23
+  out p25;
+
+trans ft31
+  in  p24, p25
+  out p140;
+
+trans inizio_chat_ref
+  in  p140
+  out p26;
+
+trans fine_chat_ref
+  in  p28
+  out p131;
+
+trans t35
+  in  p124
+  out p300;
+
+trans t47
+  in  p301
+  out p39;
+
+trans t49
+  in  p301
+  out p40;
+
+trans t56
+  in  p31
+  out p300;
+
+trans t57
+  in  p30
+  out p87;
+
+trans Ricevi_comunicazione_che_non_vuole_seguire_un_altro_corso
+  in  p37, p41
+  out p106;
+
+trans t70
+  in  p38
+  out p87;
+
+trans Ricevi_comunicazione_che_vuole_seguire_un_altro_corso
+  in  p37, p42
+  out p38;
+
+trans invio_comunicazione_di_non_voler_seguire_altro_corso_stu
+  in  p39
+  out p171, p41;
+
+trans invio_comunicazione_di_voler_seguire_altro_corso_stu
+  in  p40
+  out p31, p42;
