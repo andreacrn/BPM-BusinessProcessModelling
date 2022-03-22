@@ -3,7 +3,7 @@ Progetto del corso di *Business Process Modelling*, Data Science and Business In
 
 A. Carnevale, F. Canepuzzi
 
-## To do
+## Todo
 - Modellazione scenario in notazione BPMN
 - Trasformazione in Petri Net
 - Analisi semantica
@@ -20,5 +20,3 @@ a eventuali domande e propone degli esercizi che lo studente prova a risolvere. 
 Progettare opportuni processi che rispecchino fedelmente lo scenario sopra descritto e siano compatibili.
 
 Modificare i processi in modo che al termine del corso lo studente possa scegliere se iniziare un nuovo percorso di apprendimento.
-
-![alt-text-1](img/BPMN_main.png)
