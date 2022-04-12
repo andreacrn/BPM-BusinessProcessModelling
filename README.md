@@ -3,7 +3,7 @@ Progetto del corso di *Business Process Modelling*, Data Science and Business In
 
 A. Carnevale, F. Canepuzzi
 
-## Todo
+## Task
 - Modellazione scenario in notazione BPMN
 - Trasformazione in Petri Net
 - Analisi semantica
